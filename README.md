@@ -7,8 +7,8 @@
 一个人走台阶，一次走1步或者2步，如果有n级台阶，一共有几种走法？
 
 1、递归
-#
-function up(num) {
+
+#function up(num) {
     if (num == 0) {
        return 0;
     } else if (num == 1) {
