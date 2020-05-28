@@ -6,8 +6,8 @@
 
 一个人走台阶，一次走1步或者2步，如果有n级台阶，一共有几种走法？
 
-1、递归
-# function up(num) {
+#1、递归
+function up(num) {
     if (num == 0) {
        return 0;
     } else if (num == 1) {
@@ -21,8 +21,8 @@
 
 当数据很大的时候 调用次数爆炸不可取,
 
-2、dp
-# function dpCode(num) {
+#2、dp
+function dpCode(num) {
     let dp = [];
     dp[0] = 1;
     dp[1] = 1;
@@ -36,10 +36,9 @@
 
 
 
-3、 背包问题
-假设一个容量为capacity的背包，有n件物品， 计算在不超出容量的前提下，背包内的商品价值最高
+#3、 背包问题 假设一个容量为capacity的背包，有n件物品， 计算在不超出容量的前提下，背包内的商品价值最高
 
-# function dp(capacity, weight, value) {
+function dp(capacity, weight, value) {
     let packageValue = []
     for (let i = 0; i < weight.length + 1; i++) {
         let arr = new Array(capacity + 1).fill(0)
